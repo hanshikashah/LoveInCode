@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Valentine's Day Surprise</title>
+    <link rel="icon" href="images/heart.png" type="image/x-icon" />
+  </head>
+  <body
+    style="
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      background-color: rgb(255 255 255 / 30%);
+      backdrop-filter: blur(5px);
+    "
+  >
+    <div class="container">
+      <h1>Will you be my Valentine?</h1>
+      <button id="btn" onclick="showMessage()">Click me!</button>
+      <div class="message-container" id="messageContainer">
+        <div class="heart-container">
+          <img src="images/heart.png" alt="Heart Image" id="heartImg" />
+        </div>
+        <p id="hiddenMessage">
+          I love you more than words can express. Will you make my day special?
+        </p>
+        <button id="yesBtn" onclick="yesMessage()">Yes, I will!</button>
+        <button id="noBtn" onclick="noMessage()">No, sorry.</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
